@@ -60,7 +60,7 @@ else()
 endif()
 
 
-add_executable(gameboy main.c)
+add_executable(gameboy main.c cpu.c)
 
 # Add the *base* include directory for SDL2
 # This makes sure the compiler finds /opt/homebrew/include, so #include <SDL2/SDL.h> works.
