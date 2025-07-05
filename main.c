@@ -4,8 +4,6 @@
 #include "cpu.h"
 
 
-
-
 #define MEMORY_SIZE 0X10000
 
 int main(int argc, char *argv[]) {
@@ -27,6 +25,12 @@ int main(int argc, char *argv[]) {
 
     uint8_t *memory = calloc(MEMORY_SIZE, sizeof(uint8_t));
 
+    if (!memory)
+    {
+        perror("Failed to allocate memory");
+        return 1;
+    }
+
     fread(memory, 1, 0X8000, rom);
     fclose(rom);
 
@@ -35,7 +39,7 @@ int main(int argc, char *argv[]) {
     cpu_init(&cpu);
 
 
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < 200; i++)
     {
         cpu_step(&cpu, memory);
     }
