@@ -60,9 +60,21 @@ else()
 endif()
 
 
-add_executable(gameboy main.c cpu.c
-        mmu.c
-        mmu.h
+add_executable(gameboy main.c
+        ../lib/bus.c
+        ../include/bus.h
+        ../lib/cart.c
+        ../include/cart.h
+        ../lib/common.c
+        ../include/common.h
+        ../lib/cpu.c
+        ../include/cpu.h
+        ../lib/emu.c
+        ../include/emu.h
+        ../lib/ppu.c
+        ../include/ppu.h
+        ../lib/timer.c
+        ../include/timer.h
 )
 
 # Add the *base* include directory for SDL2
