@@ -204,6 +204,9 @@ SDL2_INCLUDE_DIR:PATH=/opt/homebrew/include/SDL2
 //Path to a library.
 SDL2_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2.dylib
 
+//Path to a library.
+SDL2_TTF_LIBRARY:FILEPATH=/opt/homebrew/lib/libSDL2_ttf.dylib
+
 //Value Computed by CMake
 gameboy_BINARY_DIR:STATIC=/Users/shibu/CLionProjects/gameboy/cmake-build-debug
 

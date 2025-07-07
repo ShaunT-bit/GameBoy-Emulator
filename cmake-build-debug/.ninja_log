@@ -1,12 +1,9 @@
 # ninja log v6
-1	45	1751559800975758833	CMakeFiles/gameboy.dir/main.c.o	eaa143734e8a6eb
-1	57	1751877918829054632	build.ninja	a48525d3a2f30c16
-188	320	1751738134281756263	gameboy	b782ffb5b3f8ec9a
-4	188	1751738134098291296	CMakeFiles/gameboy.dir/mmu.c.o	23ffb4f852690ffb
-4	188	1751738134097788922	CMakeFiles/gameboy.dir/cpu.c.o	a4410994dd0bbe13
-2	174	1751878596073895947	CMakeFiles/gameboy.dir/cpu.c.o	a4410994dd0bbe13
-3	174	1751878596074098822	CMakeFiles/gameboy.dir/mmu.c.o	23ffb4f852690ffb
-2	174	1751878596073506739	CMakeFiles/gameboy.dir/main.c.o	eaa143734e8a6eb
-174	273	1751878596245675651	gameboy	b782ffb5b3f8ec9a
-2	150	1751878777300095705	CMakeFiles/gameboy.dir/cpu.c.o	a4410994dd0bbe13
-150	200	1751878777448195471	gameboy	b782ffb5b3f8ec9a
+0	60	1751893765676669548	CMakeFiles/gameboy.dir/lib/bus.c.o	4dcdd03c1fcc251b
+2	61	1751893765678246893	CMakeFiles/gameboy.dir/lib/timer.c.o	ac45a98d785fc573
+1	62	1751893765677488762	CMakeFiles/gameboy.dir/lib/ppu.c.o	c33aad2a60e3e01e
+1	62	1751893765677068634	CMakeFiles/gameboy.dir/lib/cpu.c.o	29dbcc1b65d67713
+1	67	1751893765676921258	CMakeFiles/gameboy.dir/lib/cart.c.o	e42e5ba4fde45382
+60	87	1751893765736500881	CMakeFiles/gameboy.dir/main.c.o	2b1a2aa1766b8e49
+1	142	1751893765677234719	CMakeFiles/gameboy.dir/lib/emu.c.o	df4434d117a1f2bd
+142	176	1751893765818331551	gameboy	b037a4e4541f36ea

@@ -49,28 +49,64 @@ cmake_ninja_workdir = /Users/shibu/CLionProjects/gameboy/cmake-build-debug/
 
 build cmake_object_order_depends_target_gameboy: phony || .
 
+build CMakeFiles/gameboy.dir/lib/bus.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/bus.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/bus.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
+build CMakeFiles/gameboy.dir/lib/cart.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cart.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/cart.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
+build CMakeFiles/gameboy.dir/lib/cpu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/cpu.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
+build CMakeFiles/gameboy.dir/lib/emu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/emu.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/emu.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
+build CMakeFiles/gameboy.dir/lib/ppu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/ppu.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
+build CMakeFiles/gameboy.dir/lib/timer.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/timer.c || cmake_object_order_depends_target_gameboy
+  DEP_FILE = CMakeFiles/gameboy.dir/lib/timer.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/gameboy.dir
+  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
+  TARGET_PDB = gameboy.pdb
+
 build CMakeFiles/gameboy.dir/main.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/main.c || cmake_object_order_depends_target_gameboy
   DEP_FILE = CMakeFiles/gameboy.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir
-  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
-  TARGET_PDB = gameboy.pdb
-
-build CMakeFiles/gameboy.dir/cpu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/cpu.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/cpu.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir
-  TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
-  TARGET_PDB = gameboy.pdb
-
-build CMakeFiles/gameboy.dir/mmu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/mmu.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/mmu.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
   OBJECT_DIR = CMakeFiles/gameboy.dir
   OBJECT_FILE_DIR = CMakeFiles/gameboy.dir
   TARGET_COMPILE_PDB = CMakeFiles/gameboy.dir/
@@ -84,9 +120,9 @@ build CMakeFiles/gameboy.dir/mmu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users
 #############################################
 # Link the executable gameboy
 
-build gameboy: C_EXECUTABLE_LINKER__gameboy_Debug CMakeFiles/gameboy.dir/main.c.o CMakeFiles/gameboy.dir/cpu.c.o CMakeFiles/gameboy.dir/mmu.c.o | /opt/homebrew/lib/libSDL2.dylib
+build gameboy: C_EXECUTABLE_LINKER__gameboy_Debug CMakeFiles/gameboy.dir/lib/bus.c.o CMakeFiles/gameboy.dir/lib/cart.c.o CMakeFiles/gameboy.dir/lib/cpu.c.o CMakeFiles/gameboy.dir/lib/emu.c.o CMakeFiles/gameboy.dir/lib/ppu.c.o CMakeFiles/gameboy.dir/lib/timer.c.o CMakeFiles/gameboy.dir/main.c.o | /opt/homebrew/lib/libSDL2.dylib /opt/homebrew/lib/libSDL2_ttf.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib -Wl,-rpath,INSTALL_RPATH -Wl,-rpath,@loader_path/../lib  /opt/homebrew/lib/libSDL2.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libSDL2.dylib  /opt/homebrew/lib/libSDL2_ttf.dylib
   OBJECT_DIR = CMakeFiles/gameboy.dir
   POST_BUILD = :
   PRE_LINK = :
