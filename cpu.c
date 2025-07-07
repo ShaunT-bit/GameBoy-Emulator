@@ -1,9 +1,8 @@
-
 #include "cpu.h"
 #include <stdio.h>
+#include "mmu.h"
 
 
-//Helper functions
 uint16_t get_HL(CPU *cpu)
 {
     return ((uint16_t)cpu -> h << 8) | cpu -> l;
@@ -15,13 +14,11 @@ void set_HL(CPU *cpu, uint16_t value)
     cpu->l = (uint8_t)(value & 0xFF);
 }
 
-
 void cpu_execute_cb(CPU *cpu, uint8_t *memory)
 {
-    uint8_t cb_opcode = memory[cpu -> pc];
+    uint8_t cb_opcode = mmu_read_byte(memory, cpu -> pc);
 
-    printf("CB opcode: 0%02X\n",cb_opcode);
-
+    printf("CB opcode: 0x%02X\n",cb_opcode);
     switch (cb_opcode)
     {
         case 0x00:
@@ -60,7 +57,6 @@ void cpu_execute_cb(CPU *cpu, uint8_t *memory)
                     cpu -> f &= ~FLAG_Z;
                 }
 
-
                 cpu -> f &= ~FLAG_N;
                 cpu -> f |= FLAG_H;
 
@@ -80,7 +76,6 @@ void cpu_execute_cb(CPU *cpu, uint8_t *memory)
 
 void cpu_init(CPU *cpu)
 {
-
     cpu -> pc = 0x100;
     cpu -> sp = 0xFFFE;
 
@@ -96,10 +91,10 @@ void cpu_init(CPU *cpu)
     cpu->cycles = 0;
 }
 
+// Function: cpu_step
 void cpu_step(CPU *cpu, uint8_t *memory)
 {
-    uint8_t opcode = memory[cpu->pc];
-
+    uint8_t opcode = mmu_read_byte(memory, cpu->pc);
 
     switch (opcode)
     {
@@ -111,21 +106,22 @@ void cpu_step(CPU *cpu, uint8_t *memory)
                 break;
             }
 
-        case 0x21:
+        case 0x21: // Assuming this is LD HL, d16
             {
-                printf("PUSH\n");
-                uint8_t low = memory[cpu->pc + 1];
-                uint8_t high = memory[cpu->pc + 2];
+                printf("LD HL, d16 (0x21)\n");
+                uint8_t low = mmu_read_byte(memory, cpu->pc + 1);
+                uint8_t high = mmu_read_byte(memory, cpu->pc + 2);
                 cpu->h = high;
                 cpu->l = low;
                 cpu->pc += 3;
                 cpu->cycles += 12;
+                break;
             }
         case 0x31:
         {
-            printf("0x31\n");
-            uint8_t low = memory[cpu->pc + 1];
-            uint8_t high = memory[cpu->pc + 2];
+            printf("LD SP, d16 (0x31)\n");
+            uint8_t low = mmu_read_byte(memory, cpu->pc + 1);
+            uint8_t high = mmu_read_byte(memory, cpu->pc + 2);
 
             uint16_t immediate_value = ((uint16_t)high<<8) | low;
 
@@ -135,24 +131,23 @@ void cpu_step(CPU *cpu, uint8_t *memory)
             break;
         }
 
-        case 0x32:
+        case 0x32: // LD (HL-), A
         {
-                printf("0x32\n");
+            printf("LD (HL-), A (0x32)\n");
+            uint16_t address = get_HL(cpu);
+            mmu_write_byte(memory, address, cpu -> a);
 
-                uint16_t address = get_HL(cpu);
-                memory[address] = cpu -> a;
 
+            set_HL(cpu,address-1);
 
-                set_HL(cpu,address-1);
-
-                cpu->pc++;
-                cpu->cycles += 8;
-                break;
+            cpu->pc++;
+            cpu->cycles += 8;
+            break;
         }
 
         case 0xAF:
         {
-            printf("0xAF\n");
+            printf("XOR A (0xAF)\n");
             cpu -> a ^= cpu -> a;
             cpu->f = FLAG_Z;
             cpu -> pc++;
@@ -162,9 +157,7 @@ void cpu_step(CPU *cpu, uint8_t *memory)
 
     case 0xCB:
             {
-
                 cpu -> pc++;
-
                 cpu_execute_cb(cpu, memory);
 
                 break;
