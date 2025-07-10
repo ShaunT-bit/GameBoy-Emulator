@@ -60,7 +60,16 @@ file(GLOB_RECURSE SOURCES
 )
 
 # ---- Define Executable ----
-add_executable(gameboy ${SOURCES})
+add_executable(gameboy ${SOURCES}
+        lib/instructions.c
+        include/instructions.h
+        lib/ram.c
+        include/ram.h
+        lib/stack.c
+        include/stack.h
+        lib/cpu_util.c
+        lib/cpu_proc.c
+        lib/cpu_fetch.c)
 
 target_include_directories(gameboy PRIVATE
         "${CMAKE_CURRENT_SOURCE_DIR}/include"

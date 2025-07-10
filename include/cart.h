@@ -3,7 +3,6 @@
 #include "common.h"
 
 typedef struct {
-
     u8 entry[4];
     u8 logo[0x30];
 
@@ -21,3 +20,6 @@ typedef struct {
 } rom_header;
 
 bool cart_load(char *cart);
+
+u8 cart_read(u16 address);
+void cart_write(u16 address, u8 value);
