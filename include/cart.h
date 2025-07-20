@@ -1,6 +1,6 @@
 #pragma once
 
-#include "common.h"
+#include <common.h>
 
 typedef struct {
     u8 entry[4];
@@ -12,7 +12,7 @@ typedef struct {
     u8 type;
     u8 rom_size;
     u8 ram_size;
-    u8 dest_size;
+    u8 dest_code;
     u8 lic_code;
     u8 version;
     u8 checksum;

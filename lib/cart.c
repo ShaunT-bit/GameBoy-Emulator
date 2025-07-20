@@ -170,11 +170,14 @@ bool cart_load(char *cart) {
 }
 
 u8 cart_read(u16 address) {
+    //for now just ROM ONLY type supported...
+
     return ctx.rom_data[address];
 }
 
 void cart_write(u16 address, u8 value) {
+    //for now, ROM ONLY...
 
-    printf("cart_write(%04X)\n",address);
+    printf("cart_write(%04X)\n", address);
     NO_IMPL
 }
