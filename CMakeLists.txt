@@ -69,7 +69,16 @@ add_executable(gameboy ${SOURCES}
         include/stack.h
         lib/cpu_util.c
         lib/cpu_proc.c
-        lib/cpu_fetch.c)
+        lib/cpu_fetch.c
+        include/dbg.h
+        include/interrupts.h
+        include/io.h
+        include/ui.h
+        lib/dbg.c
+        lib/interrupts.c
+        lib/io.c
+        lib/ui.c
+)
 
 target_include_directories(gameboy PRIVATE
         "${CMAKE_CURRENT_SOURCE_DIR}/include"

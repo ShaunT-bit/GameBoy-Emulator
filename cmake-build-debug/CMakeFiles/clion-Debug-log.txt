@@ -2,6 +2,6 @@
 -- SDL2_LIBRARY: /opt/homebrew/lib/libSDL2.dylib
 -- SDL2_INCLUDE_DIR: /opt/homebrew/include/SDL2
 -- SDL2_TTF_LIBRARY: /opt/homebrew/lib/libSDL2_ttf.dylib
--- Configuring done (0.0s)
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/shibu/CLionProjects/gameboy/cmake-build-debug
