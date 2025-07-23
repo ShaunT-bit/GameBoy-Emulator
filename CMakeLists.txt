@@ -78,6 +78,8 @@ add_executable(gameboy ${SOURCES}
         lib/interrupts.c
         lib/io.c
         lib/ui.c
+        include/dma.h
+        lib/dma.c
 )
 
 target_include_directories(gameboy PRIVATE
