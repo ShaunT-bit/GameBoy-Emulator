@@ -78,7 +78,7 @@ void bus_write(u16 address, u8 value) {
         if (dma_transferring()) {
             return;
         }
-
+        
         ppu_oam_write(address, value);
     } else if (address < 0xFF00) {
         //unusable reserved
@@ -87,7 +87,7 @@ void bus_write(u16 address, u8 value) {
         io_write(address, value);
     } else if (address == 0xFFFF) {
         //CPU SET ENABLE REGISTER
-
+        
         cpu_set_ie_register(value);
     } else {
         hram_write(address, value);

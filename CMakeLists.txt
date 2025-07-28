@@ -80,6 +80,10 @@ add_executable(gameboy ${SOURCES}
         lib/ui.c
         include/dma.h
         lib/dma.c
+        include/ppu_sm.h
+        include/lcd.h
+        lib/lcd.c
+        lib/ppu_sm.c
 )
 
 target_include_directories(gameboy PRIVATE
