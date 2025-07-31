@@ -84,6 +84,7 @@ add_executable(gameboy ${SOURCES}
         include/lcd.h
         lib/lcd.c
         lib/ppu_sm.c
+        lib/ppu_pipeline.c
 )
 
 target_include_directories(gameboy PRIVATE
