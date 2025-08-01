@@ -11,7 +11,7 @@
 #include <pthread.h>
 #include <unistd.h>
 
-/*
+/* 
   Emu components:
 
   |Cart|
@@ -66,7 +66,7 @@ int emu_run(int argc, char **argv) {
     printf("Cart loaded..\n");
 
     ui_init();
-
+    
     pthread_t t1;
 
     if (pthread_create(&t1, NULL, cpu_run, NULL)) {
@@ -91,7 +91,7 @@ int emu_run(int argc, char **argv) {
 }
 
 void emu_cycles(int cpu_cycles) {
-
+    
     for (int i=0; i<cpu_cycles; i++) {
         for (int n=0; n<4; n++) {
             ctx.ticks++;

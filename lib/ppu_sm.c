@@ -102,3 +102,4 @@ void ppu_mode_hblank() {
         ppu_get_context()->line_ticks = 0;
     }
 }
+

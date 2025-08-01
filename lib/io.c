@@ -46,7 +46,7 @@ void io_write(u16 address, u8 value) {
         timer_write(address, value);
         return;
     }
-
+    
     if (address == 0xFF0F) {
         cpu_set_int_flags(value);
         return;

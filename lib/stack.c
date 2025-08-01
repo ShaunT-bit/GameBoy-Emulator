@@ -62,7 +62,7 @@
     0xDFFA: 00
     0xDFFB: 00
     0xDFFC: 00
-    0xDFFD: 77
+    0xDFFD: 77 
     0xDFFE: 55 <- SP
     0xDFFF: 00
 
@@ -80,7 +80,7 @@
     0xDFFB: 00
     0xDFFC: 00
     0xDFFD: 88 <- SP
-    0xDFFE: 55
+    0xDFFE: 55 
     0xDFFF: 00
 */
 

@@ -6,29 +6,10 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: gameboy
+# Project: gbemu
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__gameboy_unscanned_Debug
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C executable.
-
-rule C_EXECUTABLE_LINKER__gameboy_Debug
-  command = $PRE_LINK && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking C executable $TARGET_FILE
-  restat = $RESTAT
-
 
 #############################################
 # Rule for running custom commands.
@@ -39,11 +20,77 @@ rule CUSTOM_COMMAND
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__emu_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__emu_Debug
+  command = $PRE_LINK && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f $TARGET_FILE && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib $TARGET_FILE && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__gbemu_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__gbemu_Debug
+  command = $PRE_LINK && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__check_gbe_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__check_gbe_Debug
+  command = $PRE_LINK && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
   command = /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/shibu/CLionProjects/gameboy -B/Users/shibu/CLionProjects/gameboy/cmake-build-debug
   description = Re-running CMake...
+  generator = 1
+
+
+#############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake
+  description = Re-checking globbed directories...
   generator = 1
 
 

@@ -42,7 +42,7 @@ static void execute() {
 }
 
 bool cpu_step() {
-
+    
     if (!ctx.halted) {
         u16 pc = ctx.regs.pc;
 
@@ -52,7 +52,7 @@ bool cpu_step() {
 
 #if CPU_DEBUG == 1
         char flags[16];
-        sprintf(flags, "%c%c%c%c",
+        sprintf(flags, "%c%c%c%c", 
             ctx.regs.f & (1 << 7) ? 'Z' : '-',
             ctx.regs.f & (1 << 6) ? 'N' : '-',
             ctx.regs.f & (1 << 5) ? 'H' : '-',
@@ -62,7 +62,7 @@ bool cpu_step() {
         char inst[16];
         inst_to_str(&ctx, inst);
 
-        printf("%08lX - %04X: %-12s (%02X %02X %02X) A: %02X F: %s BC: %02X%02X DE: %02X%02X HL: %02X%02X\n",
+        printf("%08lX - %04X: %-12s (%02X %02X %02X) A: %02X F: %s BC: %02X%02X DE: %02X%02X HL: %02X%02X\n", 
             emu_get_context()->ticks,
             pc, inst, ctx.cur_opcode,
             bus_read(pc + 1), bus_read(pc + 2), ctx.regs.a, flags, ctx.regs.b, ctx.regs.c,

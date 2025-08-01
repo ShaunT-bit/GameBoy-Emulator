@@ -46,7 +46,7 @@ void cpu_set_reg(reg_type rt, u16 val) {
         case RT_BC: *((u16 *)&ctx.regs.b) = reverse(val); break;
         case RT_DE: *((u16 *)&ctx.regs.d) = reverse(val); break;
         case RT_HL: {
-         *((u16 *)&ctx.regs.h) = reverse(val);
+         *((u16 *)&ctx.regs.h) = reverse(val); 
          break;
         }
 

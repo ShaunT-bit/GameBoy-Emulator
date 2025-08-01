@@ -7,7 +7,7 @@ extern cpu_context ctx;
 void fetch_data() {
     ctx.mem_dest = 0;
     ctx.dest_is_mem = false;
-
+    
     if (ctx.cur_inst == NULL) {
         return;
     }

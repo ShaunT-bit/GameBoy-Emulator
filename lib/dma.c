@@ -38,3 +38,4 @@ void dma_tick() {
 bool dma_transferring() {
     return ctx.active;
 }
+

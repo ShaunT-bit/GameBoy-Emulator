@@ -11,14 +11,14 @@
 # =============================================================================
 
 # =============================================================================
-# Project: gameboy
+# Project: gbemu
 # Configurations: Debug
 # =============================================================================
 
 #############################################
 # Minimal version of Ninja required by this file
 
-ninja_required_version = 1.5
+ninja_required_version = 1.8
 
 
 #############################################
@@ -40,178 +40,17 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /Users/shibu/CLionProjects/gameboy/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target gameboy
-
 
 #############################################
-# Order-only phony target for gameboy
+# Utility command for test
 
-build cmake_object_order_depends_target_gameboy: phony || .
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
 
-build CMakeFiles/gameboy.dir/lib/bus.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/bus.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/bus.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/cart.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cart.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/cart.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/cpu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/cpu.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/cpu_fetch.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_fetch.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/cpu_fetch.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/cpu_proc.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_proc.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/cpu_proc.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/cpu_util.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_util.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/cpu_util.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/dbg.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/dbg.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/dbg.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/dma.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/dma.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/dma.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/emu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/emu.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/emu.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/instructions.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/instructions.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/instructions.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/interrupts.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/interrupts.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/interrupts.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/io.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/io.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/io.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/lcd.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/lcd.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/lcd.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/ppu.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/ppu.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/ppu_pipeline.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu_pipeline.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/ppu_pipeline.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/ppu_sm.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu_sm.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/ppu_sm.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/ram.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ram.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/ram.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/stack.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/stack.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/stack.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/timer.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/timer.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/timer.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/lib/ui.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ui.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/lib/ui.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir/lib
-
-build CMakeFiles/gameboy.dir/main.c.o: C_COMPILER__gameboy_unscanned_Debug /Users/shibu/CLionProjects/gameboy/main.c || cmake_object_order_depends_target_gameboy
-  DEP_FILE = CMakeFiles/gameboy.dir/main.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/include -I/opt/homebrew/include/SDL2 -I/opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  OBJECT_FILE_DIR = CMakeFiles/gameboy.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target gameboy
-
-
-#############################################
-# Link the executable gameboy
-
-build gameboy: C_EXECUTABLE_LINKER__gameboy_Debug CMakeFiles/gameboy.dir/lib/bus.c.o CMakeFiles/gameboy.dir/lib/cart.c.o CMakeFiles/gameboy.dir/lib/cpu.c.o CMakeFiles/gameboy.dir/lib/cpu_fetch.c.o CMakeFiles/gameboy.dir/lib/cpu_proc.c.o CMakeFiles/gameboy.dir/lib/cpu_util.c.o CMakeFiles/gameboy.dir/lib/dbg.c.o CMakeFiles/gameboy.dir/lib/dma.c.o CMakeFiles/gameboy.dir/lib/emu.c.o CMakeFiles/gameboy.dir/lib/instructions.c.o CMakeFiles/gameboy.dir/lib/interrupts.c.o CMakeFiles/gameboy.dir/lib/io.c.o CMakeFiles/gameboy.dir/lib/lcd.c.o CMakeFiles/gameboy.dir/lib/ppu.c.o CMakeFiles/gameboy.dir/lib/ppu_pipeline.c.o CMakeFiles/gameboy.dir/lib/ppu_sm.c.o CMakeFiles/gameboy.dir/lib/ram.c.o CMakeFiles/gameboy.dir/lib/stack.c.o CMakeFiles/gameboy.dir/lib/timer.c.o CMakeFiles/gameboy.dir/lib/ui.c.o CMakeFiles/gameboy.dir/main.c.o | /opt/homebrew/lib/libSDL2.dylib /opt/homebrew/lib/libSDL2_ttf.dylib
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libSDL2.dylib  /opt/homebrew/lib/libSDL2_ttf.dylib
-  OBJECT_DIR = CMakeFiles/gameboy.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = gameboy
-  TARGET_PDB = gameboy.dbg
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -236,8 +75,561 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/shibu/CLionProjects/gameboy/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target emu
+
+
+#############################################
+# Order-only phony target for emu
+
+build cmake_object_order_depends_target_emu: phony || .
+
+build lib/CMakeFiles/emu.dir/bus.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/bus.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/bus.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/cart.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cart.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/cart.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/cpu.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/cpu.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/cpu_fetch.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_fetch.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/cpu_fetch.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/cpu_proc.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_proc.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/cpu_proc.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/cpu_util.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/cpu_util.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/cpu_util.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/dbg.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/dbg.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/dbg.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/dma.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/dma.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/dma.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/emu.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/emu.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/emu.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/instructions.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/instructions.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/instructions.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/interrupts.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/interrupts.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/interrupts.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/io.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/io.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/io.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/lcd.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/lcd.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/lcd.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/ppu.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/ppu.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/ppu_pipeline.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu_pipeline.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/ppu_pipeline.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/ppu_sm.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ppu_sm.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/ppu_sm.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/ram.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ram.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/ram.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/stack.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/stack.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/stack.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/timer.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/timer.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/timer.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+build lib/CMakeFiles/emu.dir/ui.c.o: C_COMPILER__emu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/lib/ui.c || cmake_object_order_depends_target_emu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = lib/CMakeFiles/emu.dir/ui.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -I/usr/local/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  OBJECT_FILE_DIR = lib/CMakeFiles/emu.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target emu
+
+
+#############################################
+# Link the static library lib/libemu.a
+
+build lib/libemu.a: C_STATIC_LIBRARY_LINKER__emu_Debug lib/CMakeFiles/emu.dir/bus.c.o lib/CMakeFiles/emu.dir/cart.c.o lib/CMakeFiles/emu.dir/cpu.c.o lib/CMakeFiles/emu.dir/cpu_fetch.c.o lib/CMakeFiles/emu.dir/cpu_proc.c.o lib/CMakeFiles/emu.dir/cpu_util.c.o lib/CMakeFiles/emu.dir/dbg.c.o lib/CMakeFiles/emu.dir/dma.c.o lib/CMakeFiles/emu.dir/emu.c.o lib/CMakeFiles/emu.dir/instructions.c.o lib/CMakeFiles/emu.dir/interrupts.c.o lib/CMakeFiles/emu.dir/io.c.o lib/CMakeFiles/emu.dir/lcd.c.o lib/CMakeFiles/emu.dir/ppu.c.o lib/CMakeFiles/emu.dir/ppu_pipeline.c.o lib/CMakeFiles/emu.dir/ppu_sm.c.o lib/CMakeFiles/emu.dir/ram.c.o lib/CMakeFiles/emu.dir/stack.c.o lib/CMakeFiles/emu.dir/timer.c.o lib/CMakeFiles/emu.dir/ui.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/CMakeFiles/emu.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libemu.a
+  TARGET_PDB = emu.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build lib/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build lib/test: phony lib/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/shibu/CLionProjects/gameboy -B/Users/shibu/CLionProjects/gameboy/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/rebuild_cache: phony lib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build lib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build lib/CMakeFiles/install.util: CUSTOM_COMMAND lib/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build lib/install: phony lib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build lib/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build lib/install/local: phony lib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build lib/install/strip: phony lib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/shibu/CLionProjects/gameboy/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target gbemu
+
+
+#############################################
+# Order-only phony target for gbemu
+
+build cmake_object_order_depends_target_gbemu: phony || cmake_object_order_depends_target_emu
+
+build gbemu/CMakeFiles/gbemu.dir/main.c.o: C_COMPILER__gbemu_unscanned_Debug /Users/shibu/CLionProjects/gameboy/gbemu/main.c || cmake_object_order_depends_target_gbemu
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = gbemu/CMakeFiles/gbemu.dir/main.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = gbemu/CMakeFiles/gbemu.dir
+  OBJECT_FILE_DIR = gbemu/CMakeFiles/gbemu.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gbemu
+
+
+#############################################
+# Link the executable gbemu/gbemu
+
+build gbemu/gbemu: C_EXECUTABLE_LINKER__gbemu_Debug gbemu/CMakeFiles/gbemu.dir/main.c.o | lib/libemu.a || lib/libemu.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk
+  LINK_FLAGS = -F /Library/Frameworks/ -framework SDL2
+  LINK_LIBRARIES = lib/libemu.a
+  OBJECT_DIR = gbemu/CMakeFiles/gbemu.dir
+  POST_BUILD = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy /Users/shibu/CLionProjects/gameboy/NotoSansMono-Medium.ttf /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu
+  PRE_LINK = :
+  TARGET_FILE = gbemu/gbemu
+  TARGET_PDB = gbemu.dbg
+
+
+#############################################
+# Utility command for test
+
+build gbemu/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build gbemu/test: phony gbemu/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build gbemu/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gbemu/edit_cache: phony gbemu/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gbemu/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/shibu/CLionProjects/gameboy -B/Users/shibu/CLionProjects/gameboy/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gbemu/rebuild_cache: phony gbemu/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build gbemu/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build gbemu/CMakeFiles/install.util: CUSTOM_COMMAND gbemu/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build gbemu/install: phony gbemu/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build gbemu/CMakeFiles/install/local.util: CUSTOM_COMMAND gbemu/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build gbemu/install/local: phony gbemu/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build gbemu/CMakeFiles/install/strip.util: CUSTOM_COMMAND gbemu/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build gbemu/install/strip: phony gbemu/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/shibu/CLionProjects/gameboy/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target check_gbe
+
+
+#############################################
+# Order-only phony target for check_gbe
+
+build cmake_object_order_depends_target_check_gbe: phony || cmake_object_order_depends_target_emu
+
+build tests/CMakeFiles/check_gbe.dir/check_gbe.c.o: C_COMPILER__check_gbe_unscanned_Debug /Users/shibu/CLionProjects/gameboy/tests/check_gbe.c || cmake_object_order_depends_target_check_gbe
+  DEFINES = -DHAVE_CONFIG_H
+  DEP_FILE = tests/CMakeFiles/check_gbe.dir/check_gbe.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -F /Library/Frameworks/
+  INCLUDES = -I/Users/shibu/CLionProjects/gameboy/cmake-build-debug -I/Users/shibu/CLionProjects/gameboy/tests/include -I/opt/homebrew/Cellar/check/0.15.2/include -I/usr/local/include -I/Users/shibu/CLionProjects/gameboy/tests/../include -I/Users/shibu/CLionProjects/gameboy/include -isystem /Library/Frameworks/SDL2.framework/Headers -F/Library/Frameworks
+  OBJECT_DIR = tests/CMakeFiles/check_gbe.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/check_gbe.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target check_gbe
+
+
+#############################################
+# Link the executable tests/check_gbe
+
+build tests/check_gbe: C_EXECUTABLE_LINKER__check_gbe_Debug tests/CMakeFiles/check_gbe.dir/check_gbe.c.o | lib/libemu.a || lib/libemu.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk
+  LINK_FLAGS = -F /Library/Frameworks/ -framework SDL2
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/check/0.15.2/lib  lib/libemu.a  -lcheck
+  LINK_PATH = -L/opt/homebrew/Cellar/check/0.15.2/lib
+  OBJECT_DIR = tests/CMakeFiles/check_gbe.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/check_gbe
+  TARGET_PDB = check_gbe.dbg
+
+
+#############################################
+# Utility command for test
+
+build tests/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/test: phony tests/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/shibu/CLionProjects/gameboy -B/Users/shibu/CLionProjects/gameboy/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/CMakeFiles/install.util: CUSTOM_COMMAND tests/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/install: phony tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/install/local: phony tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/all
+  COMMAND = cd /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests && /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/install/strip: phony tests/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build check_gbe: phony tests/check_gbe
+
+build emu: phony lib/libemu.a
+
+build gbemu: phony gbemu/gbemu
+
+build libemu.a: phony lib/libemu.a
 
 # =============================================================================
 # Folder targets.
@@ -247,23 +639,58 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/shibu/CLionProjects/gameboy/cmake-build-debug
 
-build all: phony gameboy
+build all: phony lib/all gbemu/all tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu
+
+build gbemu/all: phony gbemu/gbemu
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib
+
+build lib/all: phony lib/libemu.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests
+
+build tests/all: phony tests/check_gbe
 
 # =============================================================================
 # Built-in targets
 
 
 #############################################
+# Phony target to force glob verification run.
+
+build /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force: phony
+
+
+#############################################
+# Re-run CMake to check if globbed directories changed.
+
+build /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force
+  pool = console
+  restat = 1
+
+
+#############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/shibu/CLionProjects/gameboy/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/cmake.verify_globs | /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceRuns.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckFunctionExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FeatureSummary.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPkgConfig.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/shibu/CLionProjects/gameboy/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /Users/shibu/CLionProjects/gameboy/cmake/config.h.in /Users/shibu/CLionProjects/gameboy/gbemu/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/lib/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/tests/CMakeLists.txt /opt/homebrew/lib/cmake/SDL2_ttf/sdl2_ttf-config-version.cmake /opt/homebrew/lib/cmake/SDL2_ttf/sdl2_ttf-config.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/shibu/CLionProjects/gameboy/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
+build /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceRuns.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckFunctionExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FeatureSummary.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPkgConfig.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/shibu/CLionProjects/gameboy/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /Users/shibu/CLionProjects/gameboy/cmake/config.h.in /Users/shibu/CLionProjects/gameboy/gbemu/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/lib/CMakeLists.txt /Users/shibu/CLionProjects/gameboy/tests/CMakeLists.txt /opt/homebrew/lib/cmake/SDL2_ttf/sdl2_ttf-config-version.cmake /opt/homebrew/lib/cmake/SDL2_ttf/sdl2_ttf-config.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
 
 
 #############################################

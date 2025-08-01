@@ -83,16 +83,16 @@ typedef enum {
     IN_RST,
     IN_ERR,
     //CB instructions...
-    IN_RLC,
+    IN_RLC, 
     IN_RRC,
-    IN_RL,
+    IN_RL, 
     IN_RR,
-    IN_SLA,
+    IN_SLA, 
     IN_SRA,
-    IN_SWAP,
+    IN_SWAP, 
     IN_SRL,
-    IN_BIT,
-    IN_RES,
+    IN_BIT, 
+    IN_RES, 
     IN_SET
 } in_type;
 

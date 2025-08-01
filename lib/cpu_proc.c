@@ -261,7 +261,7 @@ static void proc_or(cpu_context *ctx) {
 static void proc_cp(cpu_context *ctx) {
     int n = (int)ctx->regs.a - (int)ctx->fetched_data;
 
-    cpu_set_flags(ctx, n == 0, 1,
+    cpu_set_flags(ctx, n == 0, 1, 
         ((int)ctx->regs.a & 0x0F) - ((int)ctx->fetched_data & 0x0F) < 0, n < 0);
 }
 
@@ -295,14 +295,14 @@ static void proc_ld(cpu_context *ctx) {
     }
 
     if (ctx->cur_inst->mode == AM_HL_SPR) {
-        u8 hflag = (cpu_read_reg(ctx->cur_inst->reg_2) & 0xF) +
+        u8 hflag = (cpu_read_reg(ctx->cur_inst->reg_2) & 0xF) + 
             (ctx->fetched_data & 0xF) >= 0x10;
 
-        u8 cflag = (cpu_read_reg(ctx->cur_inst->reg_2) & 0xFF) +
+        u8 cflag = (cpu_read_reg(ctx->cur_inst->reg_2) & 0xFF) + 
             (ctx->fetched_data & 0xFF) >= 0x100;
 
         cpu_set_flags(ctx, 0, 0, hflag, cflag);
-        cpu_set_reg(ctx->cur_inst->reg_1,
+        cpu_set_reg(ctx->cur_inst->reg_1, 
             cpu_read_reg(ctx->cur_inst->reg_2) + (int8_t)ctx->fetched_data);
 
         return;
@@ -413,7 +413,7 @@ static void proc_push(cpu_context *ctx) {
     u16 lo = cpu_read_reg(ctx->cur_inst->reg_1) & 0xFF;
     emu_cycles(1);
     stack_push(lo);
-
+    
     emu_cycles(1);
 }
 
@@ -478,9 +478,9 @@ static void proc_sbc(cpu_context *ctx) {
 
     int z = cpu_read_reg(ctx->cur_inst->reg_1) - val == 0;
 
-    int h = ((int)cpu_read_reg(ctx->cur_inst->reg_1) & 0xF)
+    int h = ((int)cpu_read_reg(ctx->cur_inst->reg_1) & 0xF) 
         - ((int)ctx->fetched_data & 0xF) - ((int)CPU_FLAG_C) < 0;
-    int c = ((int)cpu_read_reg(ctx->cur_inst->reg_1))
+    int c = ((int)cpu_read_reg(ctx->cur_inst->reg_1)) 
         - ((int)ctx->fetched_data) - ((int)CPU_FLAG_C) < 0;
 
     cpu_set_reg(ctx->cur_inst->reg_1, cpu_read_reg(ctx->cur_inst->reg_1) - val);
@@ -494,7 +494,7 @@ static void proc_adc(cpu_context *ctx) {
 
     ctx->regs.a = (a + u + c) & 0xFF;
 
-    cpu_set_flags(ctx, ctx->regs.a == 0, 0,
+    cpu_set_flags(ctx, ctx->regs.a == 0, 0, 
         (a & 0xF) + (u & 0xF) + c > 0xF,
         a + u + c > 0xFF);
 }

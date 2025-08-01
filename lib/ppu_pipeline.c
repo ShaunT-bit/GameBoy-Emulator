@@ -61,10 +61,10 @@ void pipeline_fetch() {
     switch(ppu_get_context()->pfc.cur_fetch_state) {
         case FS_TILE: {
             if (LCDC_BGW_ENABLE) {
-                ppu_get_context()->pfc.bgw_fetch_data[0] = bus_read(LCDC_BG_MAP_AREA +
-                    (ppu_get_context()->pfc.map_x / 8) +
+                ppu_get_context()->pfc.bgw_fetch_data[0] = bus_read(LCDC_BG_MAP_AREA + 
+                    (ppu_get_context()->pfc.map_x / 8) + 
                     (((ppu_get_context()->pfc.map_y / 8)) * 32));
-
+            
                 if (LCDC_BGW_DATA_AREA == 0x8800) {
                     ppu_get_context()->pfc.bgw_fetch_data[0] += 128;
                 }
@@ -76,7 +76,7 @@ void pipeline_fetch() {
 
         case FS_DATA0: {
             ppu_get_context()->pfc.bgw_fetch_data[1] = bus_read(LCDC_BGW_DATA_AREA +
-                (ppu_get_context()->pfc.bgw_fetch_data[0] * 16) +
+                (ppu_get_context()->pfc.bgw_fetch_data[0] * 16) + 
                 ppu_get_context()->pfc.tile_y);
 
             ppu_get_context()->pfc.cur_fetch_state = FS_DATA1;
@@ -84,7 +84,7 @@ void pipeline_fetch() {
 
         case FS_DATA1: {
             ppu_get_context()->pfc.bgw_fetch_data[2] = bus_read(LCDC_BGW_DATA_AREA +
-                (ppu_get_context()->pfc.bgw_fetch_data[0] * 16) +
+                (ppu_get_context()->pfc.bgw_fetch_data[0] * 16) + 
                 ppu_get_context()->pfc.tile_y + 1);
 
             ppu_get_context()->pfc.cur_fetch_state = FS_IDLE;
@@ -110,7 +110,7 @@ void pipeline_push_pixel() {
         u32 pixel_data = pixel_fifo_pop();
 
         if (ppu_get_context()->pfc.line_x >= (lcd_get_context()->scroll_x % 8)) {
-            ppu_get_context()->video_buffer[ppu_get_context()->pfc.pushed_x +
+            ppu_get_context()->video_buffer[ppu_get_context()->pfc.pushed_x + 
                 (lcd_get_context()->ly * XRES)] = pixel_data;
 
             ppu_get_context()->pfc.pushed_x++;
