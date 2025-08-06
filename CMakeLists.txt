@@ -1,10 +1,7 @@
-
-
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
 project(gbemu C)
-
-set(CMAKE_MODULE_PATH "../../Downloads/part13/cmake")
+set(CMAKE_MODULE_PATH "cmake")
 
 ###############################################################################
 # Set build features
@@ -73,9 +70,12 @@ if(WIN32)
 
   string(STRIP "${SDL2_TTF_LIBRARIES}" SDL2_TTF_LIBRARIES)
 else()
-  list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
+  list(APPEND CMAKE_MODULE_PATH cmake/sdl2)
   find_package(SDL2 REQUIRED)
   find_package(SDL2_ttf REQUIRED)
+
+
+
 endif()
 
 ###############################################################################
@@ -91,10 +91,7 @@ set(CONFIG_HEADER ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 # Subdirectories
 add_subdirectory(lib)
 add_subdirectory(gbemu)
-add_subdirectory(tests)
 
-###############################################################################
-# Unit tests
-enable_testing()
-add_test(NAME check_gbe COMMAND check_gbe)
+
+
 

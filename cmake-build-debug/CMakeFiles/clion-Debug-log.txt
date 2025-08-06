@@ -1,9 +1,0 @@
-/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/shibu/CLionProjects/gameboy -B /Users/shibu/CLionProjects/gameboy/cmake-build-debug
--- SDL Libraries: SDL2::SDL2 - 
--- SDL TTF Libraries:  - 
--- Found PkgConfig: /opt/homebrew/bin/pkg-config (found version "2.4.3")
--- Checking for module 'check'
---   Found check, version 0.15.2
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/shibu/CLionProjects/gameboy/cmake-build-debug

@@ -1,4 +1,3 @@
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/test.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/list_install_components.dir
@@ -6,7 +5,6 @@
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/install/local.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/install/strip.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/emu.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/test.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/list_install_components.dir
@@ -14,18 +12,9 @@
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/install/local.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/lib/CMakeFiles/install/strip.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/gbemu.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/test.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/edit_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/rebuild_cache.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/list_install_components.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/install.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/install/local.dir
 /Users/shibu/CLionProjects/gameboy/cmake-build-debug/gbemu/CMakeFiles/install/strip.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/check_gbe.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/test.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/list_install_components.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/install.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/install/local.dir
-/Users/shibu/CLionProjects/gameboy/cmake-build-debug/tests/CMakeFiles/install/strip.dir

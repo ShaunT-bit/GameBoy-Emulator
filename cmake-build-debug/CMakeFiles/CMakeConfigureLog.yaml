@@ -4,100 +4,127 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       The system is: Darwin - 25.0.0 - arm64
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      ld: library 'System' not found
-      cc: error: linker command failed with exit code 1 (use -v to see invocation)
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Compiler: /usr/bin/cc 
       Build flags: 
-      Id flags: -c 
+      Id flags:  
       
       The output was:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is AppleClang, found in:
-        /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.o
+        /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/4.0.3/CompilerIdC/a.out
       
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting C compiler apple sysroot: "/usr/bin/cc" "-E" "apple-sdk.c"
+        # 1 "apple-sdk.c"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 465 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.c" 2
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
+        # 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 196 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 197 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 2 3 4
+        # 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.c" 2
+        
+        
+      Found apple sysroot: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_5e034
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -c /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b69a1/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b69a1.dir/build.make CMakeFiles/cmTC_b69a1.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R'
+        Building C object CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin25.0.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-        cc: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -x c /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx16.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.0 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin25.0.0
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/local/include"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/SubFrameworks"
-        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/Library/Frameworks"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
+         /usr/local/include
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include
-         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks (framework directory)
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -o cmTC_5e034   && :
+        Linking C executable cmTC_b69a1
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b69a1.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin25.0.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.5.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5e034 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 16.0.0 26.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b69a1 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:45:05 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -105,78 +132,88 @@ events:
         LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
         TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.0.3.5)
         Library search paths:
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/swift
+        	/usr/local/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
-        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -o cmTC_b69a1
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Effective list of requested architectures (possibly empty)  : ""
       Effective list of architectures found in the ABI info binary: "arm64"
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
+          add: [/usr/local/include]
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         end of search list found
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/usr/local/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R']
         ignore line: []
-        ignore line: [Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_5e034]
-        ignore line: [[1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -c /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b69a1/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b69a1.dir/build.make CMakeFiles/cmTC_b69a1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R']
+        ignore line: [Building C object CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin25.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        ignore line: [cc: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dsrNAU -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -x c /Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx16.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.0 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wgo86R -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin25.0.0]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/SubFrameworks"]
-        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/Library/Frameworks"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -v -Wl -v CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -o cmTC_5e034   && :]
+        ignore line: [Linking C executable cmTC_b69a1]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b69a1.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin25.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.5.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5e034 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 16.0.0 26.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b69a1 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -186,41 +223,44 @@ events:
           arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
-          arg [15.5.0] ==> ignore
-          arg [15.5] ==> ignore
+          arg [16.0.0] ==> ignore
+          arg [26.0] ==> ignore
           arg [-syslibroot] ==> ignore
-          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5e034] ==> ignore
+          arg [cmTC_b69a1] ==> ignore
+          arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5e034.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_b69a1.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/swift]
-        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks]
+        Library search paths: [;/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         remove lib [System]
         remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib]
-        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/swift]
-        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         implicit libs: []
         implicit objs: []
-        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/swift]
-        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks]
+        implicit dirs: [/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
       @(#)PROGRAM:ld PROJECT:ld-1167.5
@@ -232,211 +272,253 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
-      - "CMakeLists.txt:27 (check_include_files)"
-      - "CMakeLists.txt:33 (ck_check_include_file)"
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:24 (check_include_files)"
+      - "CMakeLists.txt:30 (ck_check_include_file)"
     checks:
       - "Looking for include file stdlib.h"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aEgAel"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aEgAel"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_STDLIB_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aEgAel'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_03ddd
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_03ddd.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_03ddd.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_03ddd.dir/HAVE_STDLIB_H.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aEgAel/HAVE_STDLIB_H.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_03ddd.dir/HAVE_STDLIB_H.c.o -o cmTC_03ddd   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_6fa8b/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_6fa8b.dir/build.make CMakeFiles/cmTC_6fa8b.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3'
+        Building C object CMakeFiles/cmTC_6fa8b.dir/HAVE_STDLIB_H.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_6fa8b.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_6fa8b.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_6fa8b.dir/HAVE_STDLIB_H.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3/HAVE_STDLIB_H.c
+        Linking C executable cmTC_6fa8b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fa8b.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6fa8b.dir/HAVE_STDLIB_H.c.o -o cmTC_6fa8b
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WekBl3'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
-      - "CMakeLists.txt:39 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:318 (check_include_file)"
+      - "CMakeLists.txt:36 (check_type_size)"
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3shDFw"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3shDFw"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3shDFw'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_7051e
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7051e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_7051e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_7051e.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3shDFw/CheckIncludeFile.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_7051e.dir/CheckIncludeFile.c.o -o cmTC_7051e   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_dd8ac/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_dd8ac.dir/build.make CMakeFiles/cmTC_dd8ac.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z'
+        Building C object CMakeFiles/cmTC_dd8ac.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_dd8ac.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_dd8ac.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_dd8ac.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z/CheckIncludeFile.c
+        Linking C executable cmTC_dd8ac
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd8ac.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dd8ac.dir/CheckIncludeFile.c.o -o cmTC_dd8ac
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FLTC1z'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
-      - "CMakeLists.txt:39 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:319 (check_include_file)"
+      - "CMakeLists.txt:36 (check_type_size)"
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-syLJfF"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-syLJfF"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-syLJfF'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c1a62
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c1a62.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_c1a62.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_c1a62.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-syLJfF/CheckIncludeFile.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c1a62.dir/CheckIncludeFile.c.o -o cmTC_c1a62   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_7533a/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_7533a.dir/build.make CMakeFiles/cmTC_7533a.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk'
+        Building C object CMakeFiles/cmTC_7533a.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_7533a.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_7533a.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_7533a.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk/CheckIncludeFile.c
+        Linking C executable cmTC_7533a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7533a.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7533a.dir/CheckIncludeFile.c.o -o cmTC_7533a
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t7qEGk'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
-      - "CMakeLists.txt:39 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:320 (check_include_file)"
+      - "CMakeLists.txt:36 (check_type_size)"
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sL0BYB"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sL0BYB"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sL0BYB'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_23896
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_23896.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_23896.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_23896.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sL0BYB/CheckIncludeFile.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_23896.dir/CheckIncludeFile.c.o -o cmTC_23896   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_dd935/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_dd935.dir/build.make CMakeFiles/cmTC_dd935.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl'
+        Building C object CMakeFiles/cmTC_dd935.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_dd935.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_dd935.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_dd935.dir/CheckIncludeFile.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl/CheckIncludeFile.c
+        Linking C executable cmTC_dd935
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd935.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dd935.dir/CheckIncludeFile.c.o -o cmTC_dd935
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MSD5Tl'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
-      - "CMakeLists.txt:39 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:212 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:339 (__check_type_size_impl)"
+      - "CMakeLists.txt:36 (check_type_size)"
     checks:
       - "Check size of intmax_t"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZuTT49"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZuTT49"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_INTMAX_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZuTT49'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_ed1ab
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ed1ab.dir/INTMAX_T.c.o -MF CMakeFiles/cmTC_ed1ab.dir/INTMAX_T.c.o.d -o CMakeFiles/cmTC_ed1ab.dir/INTMAX_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZuTT49/INTMAX_T.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_ed1ab.dir/INTMAX_T.c.o -o cmTC_ed1ab   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_33849/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_33849.dir/build.make CMakeFiles/cmTC_33849.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF'
+        Building C object CMakeFiles/cmTC_33849.dir/INTMAX_T.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_33849.dir/INTMAX_T.c.o -MF CMakeFiles/cmTC_33849.dir/INTMAX_T.c.o.d -o CMakeFiles/cmTC_33849.dir/INTMAX_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF/INTMAX_T.c
+        Linking C executable cmTC_33849
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33849.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_33849.dir/INTMAX_T.c.o -o cmTC_33849
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-afjFpF'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
-      - "CMakeLists.txt:40 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:212 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:339 (__check_type_size_impl)"
+      - "CMakeLists.txt:37 (check_type_size)"
     checks:
       - "Check size of uintmax_t"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YjE6Rx"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YjE6Rx"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_UINTMAX_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YjE6Rx'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_1d81c
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1d81c.dir/UINTMAX_T.c.o -MF CMakeFiles/cmTC_1d81c.dir/UINTMAX_T.c.o.d -o CMakeFiles/cmTC_1d81c.dir/UINTMAX_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YjE6Rx/UINTMAX_T.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_1d81c.dir/UINTMAX_T.c.o -o cmTC_1d81c   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_ee8c9/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_ee8c9.dir/build.make CMakeFiles/cmTC_ee8c9.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL'
+        Building C object CMakeFiles/cmTC_ee8c9.dir/UINTMAX_T.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_ee8c9.dir/UINTMAX_T.c.o -MF CMakeFiles/cmTC_ee8c9.dir/UINTMAX_T.c.o.d -o CMakeFiles/cmTC_ee8c9.dir/UINTMAX_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL/UINTMAX_T.c
+        Linking C executable cmTC_ee8c9
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee8c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee8c9.dir/UINTMAX_T.c.o -o cmTC_ee8c9
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DHfOsL'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
-      - "/Users/shibu/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
-      - "CMakeLists.txt:42 (check_type_size)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:212 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:339 (__check_type_size_impl)"
+      - "CMakeLists.txt:39 (check_type_size)"
     checks:
       - "Check size of pid_t"
     directories:
-      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-41dSTC"
-      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-41dSTC"
+      source: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5"
+      binary: "/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "../../Downloads/part13/cmake"
+      CMAKE_MODULE_PATH: "cmake"
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk"
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "HAVE_PID_T"
       cached: true
       stdout: |
-        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-41dSTC'
+        Change Dir: '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5'
         
-        Run Build Command(s): /Users/shibu/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b496f
-        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b496f.dir/PID_T.c.o -MF CMakeFiles/cmTC_b496f.dir/PID_T.c.o.d -o CMakeFiles/cmTC_b496f.dir/PID_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-41dSTC/PID_T.c
-        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b496f.dir/PID_T.c.o -o cmTC_b496f   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_9b4d3/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_9b4d3.dir/build.make CMakeFiles/cmTC_9b4d3.dir/build
+        gmake[1]: Entering directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5'
+        Building C object CMakeFiles/cmTC_9b4d3.dir/PID_T.c.o
+        /usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_9b4d3.dir/PID_T.c.o -MF CMakeFiles/cmTC_9b4d3.dir/PID_T.c.o.d -o CMakeFiles/cmTC_9b4d3.dir/PID_T.c.o -c /Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5/PID_T.c
+        Linking C executable cmTC_9b4d3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b4d3.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9b4d3.dir/PID_T.c.o -o cmTC_9b4d3
+        gmake[1]: Leaving directory '/Users/shibu/CLionProjects/gameboy/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-USoUN5'
         
       exitCode: 0
 ...

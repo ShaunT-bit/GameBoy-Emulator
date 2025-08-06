@@ -6,7 +6,7 @@ set(MAIN_SOURCES
 file (GLOB headers "${PROJECT_SOURCE_DIR}/include/*.h")
 
 add_executable(gbemu ${HEADERS} ${MAIN_SOURCES})
-target_link_libraries(gbemu emu)
+target_link_libraries(gbemu PRIVATE SDL2::SDL2 SDL2_ttf::SDL2_ttf emu)
 target_include_directories(gbemu PUBLIC ${PROJECT_SOURCE_DIR}/include )
 
 message(STATUS "SDL Libraries: ${SDL2_LIBRARIES} - ${SDL2_LIBRARY}")
