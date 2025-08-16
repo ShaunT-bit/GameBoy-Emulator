@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/shibu/CLionProjects/gameboy/cmake-build/cmake_install.cmake",
+		"/Users/shibu/CLionProjects/gameboy/cmake-build/lib/cmake_install.cmake",
+		"/Users/shibu/CLionProjects/gameboy/cmake-build/gbemu/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
